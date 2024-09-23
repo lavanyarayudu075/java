@@ -1,0 +1,20 @@
+import java.util.Scanner; 
+
+public class Spynumber { 
+	public static void main(String[] args) 
+	{ 
+        Scanner sc=new Scanner(System.in);
+		int product = 1, sum = 0, ld; 
+		int n = sc.nextInt(); 
+		while (n > 0) { 
+			ld = n % 10; 
+			sum = sum + ld; 
+			product = product * ld; 
+			n = n / 10; 
+		}  
+		if (sum == product) 
+			System.out.println("Spy Number"); 
+		else
+			System.out.println("Not Spy Number"); 
+	} 
+}
