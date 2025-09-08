@@ -1,0 +1,12 @@
+ if(x<0 || (x % 10 == 0 && x != 0))
+        {
+            return false;
+        }
+        int reversednumber = 0;
+        while(x > reversednumber)
+        {
+            reversednumber = reversednumber * 10 + x % 10;
+            x = x/10;
+        }
+        return x == reversednumber || x == reversednumber / 10;
+    (logic for palindrom sum)
