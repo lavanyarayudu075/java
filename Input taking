@@ -1,0 +1,21 @@
+
+class GFG {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int i = sc.nextInt();
+        float f = sc.nextFloat();
+        long ll = sc.nextLong();
+        byte c = sc.nextByte();
+        sc.nextLine();              // consume leftover newline
+        String str = sc.nextLine(); // read full string
+
+        System.out.println(i);
+        System.out.println(f);
+        System.out.println(ll);
+        System.out.println(c);
+        System.out.println(str);
+
+        sc.close();
+    }
+}
