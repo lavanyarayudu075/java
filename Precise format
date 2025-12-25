@@ -1,0 +1,15 @@
+class Solution {
+    // Function to return an ArrayList with exact result and formatted result
+    static ArrayList<Float> divisionWithPrecision(float a, float b) {
+        // code here
+        ArrayList<Float> result = new ArrayList<>();
+        float exact = a / b;
+        float formatted = Math.round(exact * 1000) / 1000f;
+
+        result.add(exact);
+        result.add(formatted);
+
+        return result;
+        //System.out.println
+    }
+}
